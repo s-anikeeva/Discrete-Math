@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Вычисление факториала</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+  <body>
+    <div id="header-content"></div>
+    <div id="content">
+        <main>        
+            <section id="factorial">
+                <h2>Факториал</h2>
+                <form id="factorialForm">
+                    <label for="number">Введите число:</label>
+                    <input type="number" id="number" name="number" required>
+                    <button type="submit">Вычислить</button>
+                </form>
+                <p id="result"></p>
+            </section>
+            <!-- Другие разделы... -->
+        </main>
+    </div>
+    <div id="footer-content"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        loadContent('footer-content', '../footer.html');
+        loadContent('header-content', '../header.html');
+});
+    </script>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

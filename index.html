@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор задач</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-content"></div>
+    <div id="main-content"></div>
+    <div id="footer-content"></div>
+    <script src="script.js"></script>
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function() {
+        loadContent('main-content', 'main.html');
+        loadContent('footer-content', 'footer.html');
+        loadContent('header-content', 'header.html');
+});
+    </script>
+</body>
+</html>
