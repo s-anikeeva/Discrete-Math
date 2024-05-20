@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Системы счисления</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+  <body>
+    <div id="header-content"></div>
+    <div id="content">
+        <main>        
+            <section id="conversion">
+                <h2>Перевод системы счисления</h2>
+                <form id="conversionForm">
+                    <div id="fromNumberType">
+                        <fieldset>
+                            <legend>Из системы счисления</legend>
+                            <input type="radio" name="fromSystem" id="fromDecimal" value="decimal"/><label for="decimal">Десятичная</label><br />
+                            <input type="radio" name="fromSystem" id="fromBinary" value="binary"/><label for="binary">Двоичная</label><br />
+                            <input type="radio" name="fromSystem" id="fromOctal" value="octal"/><label for="octal">Восьмеричная</label><br />
+                            <input type="radio" name="fromSystem" id="fromHexaDecimal" value="hexaDecimal"/><label for="hexaDecimal">Шестнадцатиричная</label><br />
+                        </fieldset>
+                    </div>
+                    <div id="toNumberType">
+                        <fieldset>
+                            <legend>В систему счисления</legend>
+                            <input type="radio" name="toSystem" id="toDecimal" value="decimal"/><label for="decimal">Десятичная</label><br />
+                            <input type="radio" name="toSystem" id="toBinary" value="binary"/><label for="binary">Двоичная</label><br />
+                            <input type="radio" name="toSystem" id="toOctal" value="octal"/><label for="octal">Восьмеричная</label><br />
+                            <input type="radio" name="toSystem" id="toHexaDecimal" value="hexaDecimal"/><label for="hexaDecimal">Шестнадцатиричная</label><br />
+                        </fieldset>
+                    </div>
+                    <input type="number" id="numberInput" name="decimal" required>
+                    <button type="button" onclick="convert()"> Перевести </button>
+                    <p id="result"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+    <div id="footer-content"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        loadContent('footer-content', '../footer.html');
+        loadContent('header-content', '../header.html');
+});
+    </script>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
